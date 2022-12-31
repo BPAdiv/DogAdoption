@@ -6,7 +6,7 @@ import AdoptPage from './components/adoption/AdoptPage';
 import Context from './components/Contex';
 import ContactUs from './components/forms/FormEmail';
 import { NavLink, Route, Routes } from 'react-router-dom'
-import { useState } from 'react';
+// import { useState } from 'react';
 import FooterDog from './components/footer/FooterDog';
 export const ActionContext = createContext()
 

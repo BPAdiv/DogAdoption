@@ -11,15 +11,9 @@ import './adopt-dog.css'
 function AdoptPage() {
 
 
-    const { ListOfDog, setListOfDogs, setFormPopUp, formPopUp } = useContext(ActionContext)
+    const { ListOfDog, setFormPopUp, formPopUp } = useContext(ActionContext)
 
 
-    const DogSearch = () => {
-
-        const result = ListOfDog.filter(dog => dog.age === 7)
-        return result.map(dog => <p>{dog.age}</p>)
-    }
-    const keys = ["age", "type", "size"]
 
     const [dogAge, setDogAge] = useState('')
     const [dogSize, setDogSize] = useState("")
@@ -27,25 +21,25 @@ function AdoptPage() {
     const Search = (data) => {
         return data.filter(
             (item) => {
-                if (dogSize == "") {
+                if (dogSize === "") {
                     return item;
-                } else if (item.size == dogSize) {
+                } else if (item.size === dogSize) {
                     return item
                 } else return null
             }).filter(
                 (item) => {
-                    if (dogType == "") {
+                    if (dogType === "") {
                         return item;
-                    } else if (item.type == dogType) {
+                    } else if (item.type === dogType) {
                         return item
                     } else return null
                 }).filter(
                     (item) => {
-                        if (dogAge == "") {
+                        if (dogAge === "") {
                             return item;
-                        } else if (dogAge == "puppy") {
+                        } else if (dogAge === "puppy") {
                             return item.age <= 1
-                        } else if (dogAge == "grown") {
+                        } else if (dogAge === "grown") {
                             return item.age > 1
                         } else return null
                     })
