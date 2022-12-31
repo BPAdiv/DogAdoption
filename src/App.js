@@ -1,5 +1,5 @@
+import './App.css';
 import logo from './components/dogspages/pictures/icons8-paw-64.png';
-import './app.css';
 import { createContext } from 'react';
 import HomePage from './components/Homepage/HomePage';
 import AdoptPage from './components/adoption/AdoptPage';
