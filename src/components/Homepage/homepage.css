@@ -1,0 +1,169 @@
+.home-main {
+    width: 100vw;
+    height: 100vh;
+    /* background-color: rgb(171, 151, 151); */
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    position: relative;
+    /* z-index: 1; */
+}
+
+.home-main video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.video {
+    display: none;
+}
+
+.home-heading {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    transform: translateX(50%) translateY(30%);
+    width: 50vw;
+    padding-block: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    background-color: rgb(245, 245, 245, .4);
+}
+
+.home-heading h1 {
+    font-size: 5vw;
+    text-align: center;
+    color: rgb(17, 38, 2);
+}
+
+.home-heading button {
+    /* position: relative; */
+    /* z-index: 1; */
+    pointer-events: none;
+    padding: 10px;
+    background-color: rgb(41, 113, 41);
+    color: white;
+    border: none;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.home-des {
+    padding: 10vw;
+    text-align: center;
+    font-size: 1.6rem;
+    line-height: 4rem;
+    font-weight: 500;
+}
+
+.home-des h1 {
+    font-size: 4rem;
+    text-align: center;
+}
+
+
+
+.banner-wrapper {
+    display: flex;
+    gap: 3rem;
+    /* overflow: hidden; */
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 4rem;
+    margin-bottom: 10vw;
+    padding-inline: 3vw;
+    animation: marquee 20s linear infinite;
+    transform: translate(0, -50%);
+}
+
+.banner-wrapper img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 10px;
+}
+
+@media (max-width:768px) {
+    .home-main video:first-child {
+        display: none;
+    }
+
+    .video {
+        display: inline-block;
+    }
+
+    .home-heading h1 {
+        font-size: 7vw;
+    }
+
+    .home-heading {
+        /* width: 20rem; */
+        transform: translateX(50%) translateY(50%);
+    }
+}
+
+/* @mixin white-gradient {
+    background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+$animationSpeed: 40s;
+
+// Animation
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-250px * 7))
+    }
+}
+
+
+// Styling
+.slider {
+    background: white;
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
+    height: 100px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 960px;
+
+    &::before,
+    &::after {
+        @include white-gradient;
+        content: "";
+        height: 100px;
+        position: absolute;
+        width: 200px;
+        z-index: 2;
+    }
+
+    &::after {
+        right: 0;
+        top: 0;
+        transform: rotateZ(180deg);
+    }
+
+    &::before {
+        left: 0;
+        top: 0;
+    }
+
+    .slide-track {
+        animation: scroll $animationSpeed linear infinite;
+        display: flex;
+        width: calc(250px * 14);
+    }
+
+    .slide {
+        height: 100px;
+        width: 250px;
+    }
+} */

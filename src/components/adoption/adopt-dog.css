@@ -1,0 +1,77 @@
+.search-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5vw;
+}
+
+.search-area h1 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.search-inputs {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-inline: 5vw;
+}
+
+.search-inputs>* {
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 1rem;
+}
+
+.find-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 5vw;
+}
+
+.find-form h3 {
+    font-size: 1.5rem;
+}
+
+.find-form button {
+    padding: 10px;
+    border-radius: 7px;
+    background-color: rgb(44, 151, 44);
+    color: white;
+    cursor: pointer;
+    border: none;
+    font-size: 1.2rem;
+}
+
+.dog-card {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 3rem;
+    align-items: center;
+    /* justify-items: center; */
+    padding: 5vw;
+    /* margin: auto; */
+}
+
+.btn {
+    font-weight: 600;
+}
+
+/* .css-1knaqv7-MuiBus */
+@media (max-width:768px) {
+    html {
+        font-size: 4vw;
+    }
+
+    .search-inputs {
+        flex-direction: column;
+    }
+
+}

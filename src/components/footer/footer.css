@@ -1,0 +1,38 @@
+.wrap-footer {
+    height: max-content;
+    padding-block: 3vw;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: rgb(89, 146, 45);
+}
+
+.form-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: rgb(195, 248, 255); */
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.form-contact input {
+    margin: 10px;
+    width: 15rem;
+    /* height: 20px; */
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 7px;
+    border: none;
+}
+
+.footer-contact {
+    color: white;
+    direction: rtl;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
